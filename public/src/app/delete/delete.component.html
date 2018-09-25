@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<div class= "wrapperCreation">
+        <h2>Product Details</h2>
+
+        <div class="col-md-6 row-md-12 bg-light shadow rounded w-10 p-10 division" >
+            <form (submit)="deleteProduct()">
+                <div class="form-group ">
+                    <br><br>
+                    <span class = "see "><h5>Name : </h5> </span>
+                    <span class = "see"><h5>{{ product.name }}</h5></span>
+
+
+
+                </div>
+                <div class = "form-group ">
+                        <span class = "see"><h5>Qty : </h5> </span>
+                        <span class = "see"><h5>{{ product.qty }}</h5></span>
+
+
+                </div>
+
+                <div class = "form-group ">
+                        <span class = "see"><h5>Price : </h5> </span>
+                        <span class = "see end"><h5>{{ product.price }}</h5></span>
+
+                </div>
+
+
+                <span *ngIf = "!deleteEnabled" class="text-danger">To delete a product, the Qty must be 0.</span>
+                <br><br>
+            <button type="button" class="btn btn-warning shadow rounded mr-2" [routerLink]="['/']">Back</button>
+            <button   [disabled] = "product.qty" type="submit" class="btn btn-danger shadow rounded">Delete</button>
+            </form>
+
+        </div>
+
+</div>

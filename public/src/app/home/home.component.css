@@ -1,0 +1,26 @@
+.productlist{
+    display: inline-block;
+    vertical-align: top;
+}
+.addnewproduct{
+    display: inline-block;
+    margin-left: 15%;
+    vertical-align: top;
+    margin-top:.5%;
+}
+
+.wrapperHome{
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.division{
+    width:60%;
+    margin-left: 20%;
+}
+
+.deletebutton{
+    margin-left: 2%;
+}
+

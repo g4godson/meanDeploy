@@ -1,0 +1,31 @@
+.wrapperCreation{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.division{
+        margin-left: 25%;
+        min-height: 500px;
+
+}
+
+.see{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+h5{
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+
+.end{
+    margin-bottom: 150px;
+}
+
+.start{
+    margin-top: 100px;
+}
+
